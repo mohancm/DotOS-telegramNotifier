@@ -4,7 +4,17 @@ if [[ -z "$TELEGRAM_BOT_API"  || -z "$TELEGRAM_CHAT_ID" ]]; then
    exit 1
 fi
 
-TEXT="New Update for DotOS"
+Title="New DotOS Update Avaialable"
+Device="Mido"
+Maintainer="Someone"
+Date="Build Date"
 
+TEXT="▪️ $Title 
+
+📲 Device: $Device 
+
+👨🏼‍💻 Maintainer: $Maintainer
+
+⌚️ Date: $Date"
 
 curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_API/sendMessage -d chat_id=$TELEGRAM_CHAT_ID -d text="$TEXT"
