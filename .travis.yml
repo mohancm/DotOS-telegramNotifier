@@ -1,2 +1,6 @@
+env:
+ - TELEGRAM_BOT_API=$API
+ - TELEGRAM_CHAT_ID=$ID
+
 script:
 - "./notify.sh"
