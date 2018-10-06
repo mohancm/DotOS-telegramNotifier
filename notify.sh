@@ -7,7 +7,7 @@ fi
 Title="New DotOS Update Avaialable"
 Device="Mido"
 Maintainer="Someone"
-Date="Build Date"
+Date=`date +%Y-%m-%d`
 
 TEXT="▪️ $Title 
 
